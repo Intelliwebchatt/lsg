@@ -1,0 +1,1271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LSG Recruiting Network | Premium Sales Opportunities</title>
+  <meta name="description" content="Premium sales opportunity with pre-set appointments, qualified buyers, and a streamlined qualification process for experienced closers." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-0: #040506;
+      --bg-1: #090c10;
+      --bg-2: #10151c;
+      --bg-3: #171d24;
+      --panel: rgba(255,255,255,0.055);
+      --panel-2: rgba(255,255,255,0.08);
+      --line: rgba(255,255,255,0.11);
+      --line-soft: rgba(255,255,255,0.06);
+      --text-main: #f4f7fb;
+      --text-soft: #d8dfe7;
+      --text-muted: #9ba7b5;
+      --silver-1: #f4f7fa;
+      --silver-2: #d8e1ea;
+      --silver-3: #b4c0cb;
+      --silver-4: #758392;
+      --accent-shadow: rgba(220,230,240,0.08);
+      --shadow-heavy: 0 32px 90px rgba(0,0,0,0.66);
+      --shadow-card: 0 18px 42px rgba(0,0,0,0.42);
+      --radius-xl: 30px;
+      --radius-lg: 22px;
+      --radius-md: 16px;
+      --max: 1240px;
+      --font-heading: 'Playfair Display', serif;
+      --font-body: 'Inter', sans-serif;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--font-body);
+      color: var(--text-main);
+      background:
+        radial-gradient(circle at 14% 18%, rgba(255,255,255,0.06), transparent 22%),
+        radial-gradient(circle at 86% 18%, rgba(185,198,214,0.07), transparent 18%),
+        radial-gradient(circle at 50% 75%, rgba(255,255,255,0.03), transparent 25%),
+        linear-gradient(180deg, #040506 0%, #090b0f 26%, #0c1117 56%, #050607 100%);
+      background-color: var(--bg-0);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background:
+        linear-gradient(rgba(255,255,255,0.012), rgba(255,255,255,0.012)),
+        repeating-linear-gradient(90deg, rgba(255,255,255,0.008) 0, rgba(255,255,255,0.008) 1px, transparent 1px, transparent 88px);
+      opacity: 0.17;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    body::after {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background: radial-gradient(circle at center, transparent 36%, rgba(0,0,0,0.42) 100%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    img { display: block; max-width: 100%; }
+    button, input, select { font: inherit; }
+
+    .container {
+      width: min(100%, var(--max));
+      margin: 0 auto;
+      padding: 0 24px;
+      position: relative;
+      z-index: 2;
+    }
+
+    section { position: relative; z-index: 2; }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 14px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.08);
+      background: rgba(255,255,255,0.03);
+      color: var(--silver-3);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      font-weight: 700;
+      box-shadow: 0 0 24px var(--accent-shadow);
+      margin-bottom: 18px;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: linear-gradient(180deg, #ffffff, #98a7b7);
+      box-shadow: 0 0 10px rgba(255,255,255,0.35);
+    }
+
+    h1, h2, h3 {
+      font-family: var(--font-heading);
+      line-height: 1.06;
+      letter-spacing: -0.025em;
+    }
+
+    h1 {
+      font-size: clamp(3rem, 6vw, 5.8rem);
+      margin-bottom: 1.25rem;
+      max-width: 10.3ch;
+      text-shadow: 0 10px 35px rgba(0,0,0,0.52);
+    }
+
+    h2 {
+      font-size: clamp(2rem, 4vw, 3.1rem);
+      margin-bottom: 1rem;
+    }
+
+    h3 {
+      font-size: clamp(1.2rem, 2vw, 1.55rem);
+      margin-bottom: 0.8rem;
+    }
+
+    p {
+      color: var(--text-muted);
+      font-size: 1.04rem;
+      margin-bottom: 1.15rem;
+    }
+
+    strong { color: var(--text-main); }
+
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      background: rgba(5, 7, 10, 0.72);
+      backdrop-filter: blur(18px);
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+
+    .nav-container {
+      min-height: 76px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      min-width: 0;
+      flex: 1 1 auto;
+    }
+
+    .brand img {
+      width: 46px;
+      height: 46px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 1px solid rgba(255,255,255,0.14);
+      box-shadow: 0 10px 18px rgba(0,0,0,0.35);
+      flex: 0 0 auto;
+    }
+
+    .brand-text {
+      min-width: 0;
+      display: flex;
+      flex-direction: column;
+      line-height: 1;
+    }
+
+    .brand-text strong {
+      font-size: 1rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .brand-text span {
+      margin-top: 6px;
+      font-size: 0.72rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--silver-4);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex: 0 0 auto;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 22px;
+      color: var(--text-muted);
+      font-size: 0.88rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+
+    .nav-links a:hover { color: var(--text-main); }
+
+    .nav-toggle {
+      display: none;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      border: 1px solid rgba(255,255,255,0.1);
+      background: rgba(255,255,255,0.04);
+      color: var(--text-main);
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      flex: 0 0 auto;
+    }
+
+    .nav-toggle span,
+    .nav-toggle span::before,
+    .nav-toggle span::after {
+      display: block;
+      width: 18px;
+      height: 2px;
+      background: currentColor;
+      border-radius: 2px;
+      position: relative;
+      content: "";
+    }
+
+    .nav-toggle span::before { position: absolute; top: -6px; }
+    .nav-toggle span::after { position: absolute; top: 6px; }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.95rem 1.7rem;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.12);
+      font-size: 0.86rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      transition: all 0.28s ease;
+      cursor: pointer;
+      box-shadow: 0 16px 28px rgba(0,0,0,0.28);
+    }
+
+    .btn-primary {
+      color: #0a0d11;
+      background: linear-gradient(180deg, #f7fafc 0%, #dbe4ec 54%, #b2beca 100%);
+      border-color: rgba(255,255,255,0.28);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      filter: brightness(1.03);
+      box-shadow: 0 22px 36px rgba(0,0,0,0.36);
+    }
+
+    .btn-secondary {
+      background: rgba(255,255,255,0.04);
+      color: var(--text-main);
+    }
+
+    .btn-secondary:hover {
+      transform: translateY(-2px);
+      background: rgba(255,255,255,0.07);
+    }
+
+    .header-cta {
+      padding: 0.78rem 1.15rem;
+      font-size: 0.72rem;
+      letter-spacing: 0.16em;
+      white-space: nowrap;
+    }
+
+    .mobile-menu {
+      display: none;
+      position: fixed;
+      inset: 76px 16px auto 16px;
+      border-radius: 24px;
+      border: 1px solid rgba(255,255,255,0.08);
+      background: rgba(10,14,18,0.96);
+      backdrop-filter: blur(18px);
+      box-shadow: var(--shadow-heavy);
+      padding: 18px;
+      z-index: 999;
+    }
+
+    .mobile-menu.open { display: block; }
+    .mobile-menu a {
+      display: block;
+      padding: 14px 8px;
+      color: var(--text-soft);
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      font-size: 0.84rem;
+      font-weight: 700;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+    .mobile-menu a:last-child { border-bottom: 0; }
+
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      padding: 138px 0 78px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.03fr 0.97fr;
+      gap: 34px;
+      align-items: center;
+    }
+
+    .hero-copy {
+      max-width: 60ch;
+      color: var(--text-soft);
+      font-size: 1.12rem;
+      margin-bottom: 1.9rem;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 18px;
+    }
+
+    .scroll-cue {
+      margin-top: 26px;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--silver-4);
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+    }
+    .scroll-cue::after {
+      content: "";
+      width: 46px;
+      height: 1px;
+      background: linear-gradient(90deg, rgba(255,255,255,0.4), transparent);
+    }
+
+    .hero-stage {
+      position: relative;
+      min-height: 560px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .orb {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(42px);
+      opacity: 0.22;
+      pointer-events: none;
+      animation: drift 10s ease-in-out infinite alternate;
+    }
+    .orb-1 {
+      width: 220px;
+      height: 220px;
+      top: 34px;
+      right: 52px;
+      background: rgba(220,230,240,0.28);
+    }
+    .orb-2 {
+      width: 180px;
+      height: 180px;
+      bottom: 86px;
+      left: 18px;
+      background: rgba(120,140,160,0.22);
+      animation-duration: 13s;
+    }
+
+    .hero-card,
+    .mini-card,
+    .stat-card,
+    .info-card,
+    .proof-card,
+    .form-shell,
+    .faq-item,
+    .section-shell {
+      backdrop-filter: blur(14px);
+    }
+
+    .hero-card,
+    .mini-card {
+      border-radius: var(--radius-xl);
+      border: 1px solid rgba(255,255,255,0.12);
+      background: linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.03));
+      box-shadow: var(--shadow-heavy);
+      overflow: hidden;
+      position: relative;
+      transition: transform 0.25s ease, border-color 0.25s ease;
+      will-change: transform;
+    }
+
+    .hero-card::before,
+    .mini-card::before,
+    .stat-card::before,
+    .info-card::before,
+    .proof-card::before,
+    .faq-item::before,
+    .form-shell::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(145deg, rgba(255,255,255,0.08), transparent 36%);
+      pointer-events: none;
+    }
+
+    .hero-card {
+      position: relative;
+      z-index: 2;
+      width: min(100%, 510px);
+      padding: 30px;
+      transform: rotateX(4deg) rotateY(-5deg);
+      animation: floatMain 7s ease-in-out infinite;
+    }
+
+    .hero-card h3 {
+      font-family: var(--font-body);
+      font-size: 0.88rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--silver-3);
+      margin-bottom: 12px;
+    }
+
+    .hero-card p {
+      font-size: 1.14rem;
+      line-height: 1.65;
+      color: var(--text-soft);
+      margin: 0;
+    }
+
+    .mini-card-row {
+      display: flex;
+      gap: 18px;
+      justify-content: flex-end;
+      margin-top: -26px;
+      position: relative;
+      z-index: 3;
+      padding-left: 66px;
+    }
+
+    .mini-card {
+      width: 232px;
+      padding: 22px 22px 20px;
+      animation: floatSoft 8s ease-in-out infinite;
+    }
+
+    .mini-2 { animation-delay: 0.6s; }
+
+    .mini-card .value {
+      font-size: 2rem;
+      font-weight: 800;
+      line-height: 1;
+      color: var(--text-main);
+      margin-bottom: 8px;
+      letter-spacing: -0.03em;
+    }
+
+    .mini-card .label {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      margin: 0;
+    }
+
+    .stats,
+    .content-section,
+    .proof,
+    .requirements,
+    .faq,
+    .footer-spacer { padding-bottom: 90px; }
+
+    .stat-grid,
+    .proof-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .stat-card,
+    .proof-card {
+      position: relative;
+      padding: 24px;
+      border-radius: var(--radius-lg);
+      border: 1px solid rgba(255,255,255,0.08);
+      background: linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.025));
+      box-shadow: var(--shadow-card);
+      overflow: hidden;
+      transition: transform 0.25s ease, border-color 0.25s ease;
+      will-change: transform;
+    }
+
+    .stat-card:hover,
+    .info-card:hover,
+    .proof-card:hover,
+    .form-shell:hover,
+    .faq-item:hover,
+    .hero-card:hover,
+    .mini-card:hover {
+      transform: translateY(-6px);
+      border-color: rgba(255,255,255,0.18);
+    }
+
+    .stat-label,
+    .proof-label {
+      color: var(--silver-4);
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      font-size: 0.72rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .stat-value,
+    .proof-value {
+      font-size: 1.86rem;
+      font-weight: 800;
+      line-height: 1;
+      margin-bottom: 10px;
+    }
+
+    .stat-card p,
+    .proof-card p { font-size: 0.94rem; margin-bottom: 0; }
+
+    .section-shell {
+      position: relative;
+      border-radius: 34px;
+      border: 1px solid var(--line-soft);
+      background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
+      padding: 40px;
+      box-shadow: var(--shadow-heavy);
+      overflow: hidden;
+    }
+
+    .section-shell::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle at top right, rgba(255,255,255,0.09), transparent 18%),
+        radial-gradient(circle at bottom left, rgba(255,255,255,0.04), transparent 18%);
+      pointer-events: none;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .info-card {
+      position: relative;
+      padding: 30px;
+      border-radius: var(--radius-xl);
+      border: 1px solid rgba(255,255,255,0.09);
+      background: linear-gradient(180deg, rgba(255,255,255,0.055), rgba(255,255,255,0.02));
+      box-shadow: var(--shadow-card);
+      overflow: hidden;
+      transition: transform 0.25s ease, border-color 0.25s ease;
+      will-change: transform;
+    }
+
+    .info-card::after {
+      content: "";
+      position: absolute;
+      width: 180px;
+      height: 180px;
+      right: -40px;
+      bottom: -70px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(255,255,255,0.08), transparent 70%);
+      pointer-events: none;
+    }
+
+    ul { list-style: none; margin-top: 1.15rem; }
+    ul li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 1rem;
+      color: var(--text-soft);
+      font-size: 1.02rem;
+    }
+
+    ul li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 10px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: linear-gradient(180deg, #ffffff, #92a0ae);
+      box-shadow: 0 0 10px rgba(255,255,255,0.16);
+    }
+
+    .proof .section-shell,
+    .faq .section-shell { padding-top: 34px; }
+
+    .section-heading {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      align-items: end;
+      margin-bottom: 24px;
+      position: relative;
+      z-index: 1;
+      flex-wrap: wrap;
+    }
+
+    .section-heading p {
+      max-width: 52ch;
+      margin: 0;
+    }
+
+    .proof-card .proof-value {
+      font-size: 1.2rem;
+      line-height: 1.2;
+    }
+
+    .requirements-layout {
+      display: grid;
+      grid-template-columns: 0.95fr 1.05fr;
+      gap: 26px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .form-shell {
+      position: relative;
+      padding: 34px;
+      border-radius: 30px;
+      border: 1px solid rgba(255,255,255,0.1);
+      background: linear-gradient(180deg, rgba(255,255,255,0.07), rgba(255,255,255,0.03));
+      box-shadow: var(--shadow-heavy);
+      overflow: hidden;
+      transition: transform 0.25s ease, border-color 0.25s ease;
+      will-change: transform;
+    }
+
+    .form-title { margin-bottom: 6px; }
+    .form-sub { font-size: 0.98rem; margin-bottom: 1.9rem; }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .form-group.full,
+    .checkbox-wrap { grid-column: 1 / -1; }
+
+    label {
+      color: var(--text-main);
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      font-weight: 700;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select {
+      width: 100%;
+      min-width: 0;
+      padding: 15px 16px;
+      border-radius: 14px;
+      border: 1px solid rgba(255,255,255,0.08);
+      background: rgba(10,14,18,0.96);
+      color: var(--text-main);
+      font-size: 1rem;
+      transition: border-color 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+    }
+
+    input:focus,
+    select:focus {
+      outline: none;
+      border-color: rgba(220,230,240,0.42);
+      box-shadow: 0 0 0 3px rgba(220,230,240,0.08);
+      background: rgba(12,16,21,1);
+    }
+
+    select { appearance: none; cursor: pointer; }
+
+    .checkbox-wrap { margin-top: 4px; }
+
+    .checkbox-label {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 16px;
+      border-radius: 16px;
+      border: 1px solid rgba(255,255,255,0.08);
+      background: rgba(255,255,255,0.03);
+      cursor: pointer;
+      color: var(--text-soft);
+      line-height: 1.5;
+      text-transform: none;
+      letter-spacing: normal;
+      font-size: 0.95rem;
+      font-weight: 500;
+    }
+
+    .checkbox-label input[type="checkbox"] {
+      width: 18px;
+      height: 18px;
+      margin-top: 3px;
+      flex: 0 0 auto;
+      accent-color: #dbe4ec;
+    }
+
+    .submit-btn { width: 100%; margin-top: 8px; }
+
+    .micro-note {
+      font-size: 0.82rem;
+      color: var(--silver-4);
+      margin-top: 14px;
+      margin-bottom: 0;
+    }
+
+    .faq-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .faq-item {
+      position: relative;
+      border-radius: var(--radius-lg);
+      border: 1px solid rgba(255,255,255,0.09);
+      background: linear-gradient(180deg, rgba(255,255,255,0.055), rgba(255,255,255,0.02));
+      box-shadow: var(--shadow-card);
+      overflow: hidden;
+      transition: transform 0.25s ease, border-color 0.25s ease;
+    }
+
+    .faq-item summary {
+      list-style: none;
+      cursor: pointer;
+      padding: 22px 22px 16px;
+      font-weight: 800;
+      color: var(--text-main);
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      font-size: 0.88rem;
+    }
+    .faq-item summary::-webkit-details-marker { display: none; }
+    .faq-item p {
+      padding: 0 22px 22px;
+      margin: 0;
+      color: var(--text-soft);
+      font-size: 0.97rem;
+    }
+
+    footer {
+      padding: 28px 0 42px;
+      border-top: 1px solid rgba(255,255,255,0.06);
+      position: relative;
+      z-index: 2;
+      text-align: center;
+    }
+    footer p { margin: 0; font-size: 0.92rem; }
+
+    @keyframes floatMain {
+      0% { transform: rotateX(4deg) rotateY(-5deg) translateY(0px); }
+      50% { transform: rotateX(5deg) rotateY(-3deg) translateY(-10px); }
+      100% { transform: rotateX(4deg) rotateY(-5deg) translateY(0px); }
+    }
+
+    @keyframes floatSoft {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0px); }
+    }
+
+    @keyframes drift {
+      0% { transform: translate3d(0,0,0) scale(1); }
+      100% { transform: translate3d(16px,-14px,0) scale(1.08); }
+    }
+
+    @media (max-width: 1080px) {
+      .hero-grid,
+      .grid-2,
+      .requirements-layout,
+      .faq-grid {
+        grid-template-columns: 1fr;
+      }
+      .stat-grid,
+      .proof-grid { grid-template-columns: repeat(2, 1fr); }
+      .nav-links { display: none; }
+      .nav-toggle { display: inline-flex; }
+    }
+
+    @media (max-width: 760px) {
+      .container { padding: 0 16px; }
+      .nav-container { min-height: 70px; }
+      .brand img { width: 40px; height: 40px; }
+      .brand-text strong {
+        font-size: 0.92rem;
+        letter-spacing: 0.14em;
+        max-width: 152px;
+      }
+      .brand-text span { display: none; }
+      .header-cta {
+        padding: 0.72rem 0.95rem;
+        font-size: 0.64rem;
+        letter-spacing: 0.14em;
+      }
+      .hero {
+        padding-top: 116px;
+        padding-bottom: 56px;
+        min-height: auto;
+      }
+      .hero-actions {
+        flex-direction: column;
+        align-items: stretch;
+      }
+      .btn { width: 100%; }
+      .hero-stage {
+        min-height: auto;
+        margin-top: 8px;
+        gap: 16px;
+      }
+      .hero-card {
+        width: 100%;
+        transform: none;
+        animation: floatSoft 8s ease-in-out infinite;
+        padding: 24px;
+      }
+      .hero-card p { font-size: 1.02rem; }
+      .mini-card-row {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 16px;
+        margin-top: 0;
+        padding-left: 0;
+      }
+      .mini-card {
+        width: 100%;
+        padding: 20px;
+        animation: none;
+      }
+      .mini-card .value { font-size: 1.7rem; }
+      .mini-card .label { font-size: 0.95rem; }
+      .orb-1, .orb-2 { opacity: 0.14; }
+      .stat-grid,
+      .proof-grid,
+      .form-grid { grid-template-columns: 1fr; }
+      .section-shell,
+      .info-card,
+      .form-shell { padding: 24px; }
+      .mobile-menu { inset: 70px 12px auto 12px; }
+    }
+
+    @media (max-width: 520px) {
+      h1 { font-size: 2.55rem; max-width: 9.2ch; }
+      h2 { font-size: 1.9rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav-container">
+      <a href="#top" class="brand" aria-label="LSG Recruiting Network home">
+        <img src="logo-square.png" alt="LSG Recruiting Network logo" />
+        <span class="brand-text">
+          <strong>LSG Recruiting Network</strong>
+          <span>Premium Sales Opportunities</span>
+        </span>
+      </a>
+
+      <div class="nav-actions">
+        <nav class="nav-links" aria-label="Primary">
+          <a href="#opportunity">Opportunity</a>
+          <a href="#proof">Why LSG</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+        <a href="#apply" class="btn btn-primary header-cta">Apply</a>
+        <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#opportunity">Opportunity</a>
+    <a href="#proof">Why LSG</a>
+    <a href="#apply">Apply</a>
+    <a href="#faq">FAQ</a>
+  </div>
+
+  <section class="hero" id="top">
+    <div class="container">
+      <div class="hero-grid">
+        <div>
+          <div class="eyebrow">Premium Sales Opportunity</div>
+          <h1>Stop Prospecting. Start Closing.</h1>
+          <p class="hero-copy">
+            We provide the pre-set appointments and qualified buyers. You bring the sales ability. This is a performance-driven opportunity built for experienced closers who want to spend their time presenting instead of chasing leads through the mud.
+          </p>
+          <div class="hero-actions">
+            <a href="#apply" class="btn btn-primary">Begin Qualification</a>
+            <a href="#opportunity" class="btn btn-secondary">Review Opportunity</a>
+          </div>
+          <div class="scroll-cue">Scroll for details</div>
+        </div>
+
+        <div class="hero-stage" aria-hidden="true">
+          <div class="orb orb-1"></div>
+          <div class="orb orb-2"></div>
+
+          <div class="hero-card depth-card">
+            <h3>Built for Closers</h3>
+            <p>
+              No cold calling. No telemarketing. No door knocking. Just pre-set conversations with qualified buyers in a model designed to keep your time focused on presentation volume and closing.
+            </p>
+          </div>
+
+          <div class="mini-card-row">
+            <div class="mini-card mini-1 depth-card">
+              <div class="value">$25 Pitch Pay</div>
+              <p class="label">Paid for every completed presentation.</p>
+            </div>
+            <div class="mini-card mini-2 depth-card">
+              <div class="value">$600 to $700</div>
+              <p class="label">Average commission per closed sale.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="stats">
+    <div class="container">
+      <div class="stat-grid">
+        <div class="stat-card depth-card">
+          <div class="stat-label">Weekly Target</div>
+          <div class="stat-value">$2.5k to $3.5k</div>
+          <p>Performance-based range for productive reps.</p>
+        </div>
+        <div class="stat-card depth-card">
+          <div class="stat-label">Lead Model</div>
+          <div class="stat-value">Pre-Set</div>
+          <p>Appointments are generated ahead of time.</p>
+        </div>
+        <div class="stat-card depth-card">
+          <div class="stat-label">Daily Rhythm</div>
+          <div class="stat-value">2 to 3</div>
+          <p>Pre-set presentations each day in active markets.</p>
+        </div>
+        <div class="stat-card depth-card">
+          <div class="stat-label">Role Type</div>
+          <div class="stat-value">Commission</div>
+          <p>Built for people who want pay tied to performance.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-section" id="opportunity">
+    <div class="container">
+      <div class="section-shell">
+        <div class="grid-2">
+          <div class="info-card depth-card">
+            <div class="eyebrow">Opportunity Structure</div>
+            <h2>A Model Built for Closers</h2>
+            <p>
+              We partner with independent sales professionals to represent premium consumer products. The structure removes the most inefficient parts of the process so your effort stays on presenting, qualifying, and closing.
+            </p>
+            <ul>
+              <li><strong>No Cold Calling:</strong> zero prospecting required.</li>
+              <li><strong>No Telemarketing:</strong> your time stays focused on real opportunities.</li>
+              <li><strong>No Door Knocking:</strong> appointments are pre-set in advance.</li>
+              <li><strong>Qualified Buyers:</strong> conversations start closer to the money.</li>
+            </ul>
+          </div>
+          <div class="info-card depth-card">
+            <div class="eyebrow">Compensation Model</div>
+            <h2>Top-Tier Earning Potential</h2>
+            <p>
+              This is a commission-driven role designed for experienced sales professionals who want stronger upside without wasting half the week generating leads from scratch.
+            </p>
+            <ul>
+              <li><strong>Average Commission:</strong> $600 to $700 per closed sale.</li>
+              <li><strong>Pitch Pay:</strong> $25 paid for every completed presentation.</li>
+              <li><strong>Target Income:</strong> $2,500 to $3,500 per week.</li>
+              <li><strong>Schedule:</strong> 2 to 3 pre-set appointments per day.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="proof" id="proof">
+    <div class="container">
+      <div class="section-shell">
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow">Why LSG</div>
+            <h2>Cleaner Inputs. Better Sales Days.</h2>
+          </div>
+          <p>
+            The point is simple. Waste less time on lead generation chaos and spend more of your week in qualified conversations. Strange concept, apparently, but it works.
+          </p>
+        </div>
+        <div class="proof-grid">
+          <div class="proof-card depth-card">
+            <div class="proof-label">Structured Flow</div>
+            <div class="proof-value">Qualification before conversation</div>
+            <p>We screen for fit early so both sides are not guessing in the dark.</p>
+          </div>
+          <div class="proof-card depth-card">
+            <div class="proof-label">Focused Schedule</div>
+            <div class="proof-value">Presentation time matters</div>
+            <p>The model is designed to keep your effort close to the revenue event.</p>
+          </div>
+          <div class="proof-card depth-card">
+            <div class="proof-label">Independent Environment</div>
+            <div class="proof-value">Built for self-directed reps</div>
+            <p>Best suited for people who can perform without needing babysitting.</p>
+          </div>
+          <div class="proof-card depth-card">
+            <div class="proof-label">Fast Filter</div>
+            <div class="proof-value">Clear expectations up front</div>
+            <p>Requirements, schedule, and role fit are addressed early instead of later.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="requirements" id="apply">
+    <div class="container">
+      <div class="section-shell">
+        <div class="requirements-layout">
+          <div class="info-card depth-card">
+            <div class="eyebrow">Requirements</div>
+            <h2>Do You Have What It Takes?</h2>
+            <p>
+              To be considered, you need more than interest. This opportunity is designed for people who can operate independently, communicate clearly, and perform in a commission-based environment.
+            </p>
+            <ul>
+              <li>Proven prior sales experience.</li>
+              <li>Reliable transportation and current auto insurance.</li>
+              <li>A working smartphone and strong communication habits.</li>
+              <li>Willingness to travel within your local market.</li>
+              <li><strong>Mandatory Training:</strong> 2.5-day training class with hotel provided.</li>
+            </ul>
+          </div>
+
+          <div class="form-shell depth-card">
+            <div class="eyebrow">Application</div>
+            <h3 class="form-title">Qualification Form</h3>
+            <p class="form-sub">
+              Complete the form below to begin the screening process. We review for experience, operational fit, and readiness.
+            </p>
+
+            <form name="lsg-application" method="POST" action="/thank-you.html" data-netlify="true" netlify-honeypot="bot-field">
+              <input type="hidden" name="form-name" value="lsg-application" />
+              <p hidden>
+                <label>Do not fill this out: <input name="bot-field" /></label>
+              </p>
+
+              <div class="form-grid">
+                <div class="form-group">
+                  <label for="firstName">First Name</label>
+                  <input type="text" id="firstName" name="firstName" required />
+                </div>
+                <div class="form-group">
+                  <label for="lastName">Last Name</label>
+                  <input type="text" id="lastName" name="lastName" required />
+                </div>
+                <div class="form-group full">
+                  <label for="phone">Best Contact Phone Number</label>
+                  <input type="tel" id="phone" name="phone" required />
+                </div>
+                <div class="form-group full">
+                  <label for="email">Email Address</label>
+                  <input type="email" id="email" name="email" required />
+                </div>
+                <div class="form-group full">
+                  <label for="location">City and State of Residence</label>
+                  <input type="text" id="location" name="location" placeholder="Dallas, TX" required />
+                </div>
+                <div class="form-group">
+                  <label for="experience">Previous Sales Experience</label>
+                  <select id="experience" name="experience" required>
+                    <option value="">Select an option</option>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="transportation">Reliable Transportation + Insurance</label>
+                  <select id="transportation" name="transportation" required>
+                    <option value="">Select an option</option>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="smartphone">Working Smartphone</label>
+                  <select id="smartphone" name="smartphone" required>
+                    <option value="">Select an option</option>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="travel">Able to Travel Within Your Market</label>
+                  <select id="travel" name="travel" required>
+                    <option value="">Select an option</option>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                  </select>
+                </div>
+                <div class="form-group full">
+                  <label for="training">Understands Mandatory 2.5-Day Training</label>
+                  <select id="training" name="training" required>
+                    <option value="">Select an option</option>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                  </select>
+                </div>
+                <div class="checkbox-wrap">
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="future_opportunities_email_list" value="Yes" />
+                    <span>Yes, add me to the email list for future sales opportunities and recruiting updates.</span>
+                  </label>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary submit-btn">Submit Application</button>
+              <p class="micro-note"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq" id="faq">
+    <div class="container">
+      <div class="section-shell">
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow">FAQ</div>
+            <h2>Questions People Usually Ask</h2>
+          </div>
+          <p>
+            Better to answer the obvious stuff early than play hide-and-seek with expectations.
+          </p>
+        </div>
+        <div class="faq-grid">
+          <details class="faq-item depth-card">
+            <summary>Do I have to generate my own leads?</summary>
+            <p>No. The opportunity is structured around pre-set appointments and qualified conversations rather than cold prospecting.</p>
+          </details>
+          <details class="faq-item depth-card">
+            <summary>Is this salary or hourly?</summary>
+            <p>No. This is a commission-based opportunity intended for people who are comfortable performing in that environment.</p>
+          </details>
+          <details class="faq-item depth-card">
+            <summary>What kind of experience matters most?</summary>
+            <p>Prior sales experience matters most, especially when it involved self-direction, presentation skill, and closing ability.</p>
+          </details>
+          <details class="faq-item depth-card">
+            <summary>Is training required?</summary>
+            <p>Yes. If selected, candidates must attend a 2.5-day training class. Hotel accommodations are provided as part of that process.</p>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; <script>document.write(new Date().getFullYear())</script> LSG Recruiting Network. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (navToggle && mobileMenu) {
+      navToggle.addEventListener('click', () => {
+        const open = mobileMenu.classList.toggle('open');
+        navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+      mobileMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.remove('open');
+          navToggle.setAttribute('aria-expanded', 'false');
+        });
+      });
+    }
+
+    const cards = document.querySelectorAll('.depth-card');
+    const desktopOnly = window.matchMedia('(min-width: 761px)');
+
+    function attachDepth() {
+      if (!desktopOnly.matches) {
+        cards.forEach(card => { card.style.transform = ''; });
+        return;
+      }
+      cards.forEach(card => {
+        card.addEventListener('mousemove', card._moveHandler = function(e) {
+          const rect = card.getBoundingClientRect();
+          const x = ((e.clientX - rect.left) / rect.width - 0.5) * 10;
+          const y = ((e.clientY - rect.top) / rect.height - 0.5) * -10;
+          card.style.transform = `translateY(-6px) rotateX(${y}deg) rotateY(${x}deg)`;
+        });
+        card.addEventListener('mouseleave', card._leaveHandler = function() {
+          card.style.transform = '';
+        });
+      });
+    }
+
+    attachDepth();
+  </script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Application Received | LSG Recruiting Network</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-0: #040506;
+      --bg-1: #0b1015;
+      --panel: rgba(255,255,255,0.055);
+      --line: rgba(255,255,255,0.1);
+      --text-main: #f4f7fb;
+      --text-soft: #d7dee7;
+      --text-muted: #99a5b3;
+      --shadow-heavy: 0 30px 90px rgba(0,0,0,0.65);
+      --font-heading: 'Playfair Display', serif;
+      --font-body: 'Inter', sans-serif;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      color: var(--text-main);
+      font-family: var(--font-body);
+      background:
+        radial-gradient(circle at 15% 20%, rgba(255,255,255,0.06), transparent 24%),
+        radial-gradient(circle at 80% 18%, rgba(180,200,220,0.06), transparent 18%),
+        linear-gradient(180deg, #040506 0%, #0a0d11 50%, #050607 100%);
+    }
+    .card {
+      width: min(100%, 720px);
+      padding: 38px;
+      border-radius: 30px;
+      border: 1px solid var(--line);
+      background: linear-gradient(180deg, rgba(255,255,255,0.07), rgba(255,255,255,0.03));
+      box-shadow: var(--shadow-heavy);
+      text-align: center;
+      backdrop-filter: blur(12px);
+    }
+    img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 1px solid rgba(255,255,255,0.14);
+      margin: 0 auto 20px;
+      box-shadow: 0 14px 28px rgba(0,0,0,0.35);
+    }
+    h1 {
+      font-family: var(--font-heading);
+      font-size: clamp(2.2rem, 5vw, 3.6rem);
+      line-height: 1.08;
+      margin-bottom: 14px;
+    }
+    p {
+      color: var(--text-soft);
+      font-size: 1.05rem;
+      margin-bottom: 16px;
+    }
+    .muted { color: var(--text-muted); font-size: 0.95rem; }
+    .btn {
+      display: inline-flex;
+      margin-top: 16px;
+      align-items: center;
+      justify-content: center;
+      padding: 0.95rem 1.5rem;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.14);
+      background: linear-gradient(180deg, #f7fafc 0%, #dbe4ec 54%, #b2beca 100%);
+      color: #0a0d11;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      font-weight: 800;
+      font-size: 0.8rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="logo-square.png" alt="LSG Recruiting Network logo" />
+    <h1>Application Received.</h1>
+    <p>Thanks for submitting your information. Your qualification request has been received and will be reviewed for fit, experience, and readiness.</p>
+    <p class="muted">If you checked the email list box, you may also receive updates about future sales opportunities and recruiting announcements.</p>
+    <a class="btn" href="/">Return to site</a>
+  </div>
+</body>
+</html>
