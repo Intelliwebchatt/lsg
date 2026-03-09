@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#05070b" />
+  <title>LSG | Lockhart Strategic Group</title>
+  <meta name="description" content="Direct screening for performance-driven roles. Experienced sales professionals can review fit for a commission-driven opportunity with pre-set, credit pre-approved appointments." />
+  <meta name="robots" content="index,follow" />
+  <meta property="og:title" content="LSG | Lockhart Strategic Group" />
+  <meta property="og:description" content="Direct screening for performance-driven roles." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <style>
+    :root {
+      --bg: #04060a;
+      --bg-2: #070b12;
+      --panel: rgba(255, 255, 255, 0.05);
+      --panel-2: rgba(255, 255, 255, 0.08);
+      --line: rgba(255, 255, 255, 0.10);
+      --line-strong: rgba(255, 255, 255, 0.16);
+      --text: #f6f7fb;
+      --muted: #b1b7c4;
+      --muted-2: #8d95a4;
+      --accent: #dfe8ff;
+      --glow: rgba(119, 154, 255, 0.22);
+      --shadow: 0 18px 50px rgba(0, 0, 0, 0.45);
+      --shadow-soft: 0 12px 34px rgba(0, 0, 0, 0.28);
+      --radius: 24px;
+      --radius-sm: 18px;
+      --max: 1180px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      -webkit-text-size-adjust: 100%;
+      text-size-adjust: 100%;
+      background: var(--bg);
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--text);
+      line-height: 1.55;
+      background:
+        radial-gradient(circle at 20% 10%, rgba(92, 122, 214, 0.18), transparent 30%),
+        radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.06), transparent 20%),
+        radial-gradient(circle at 50% 65%, rgba(79, 103, 172, 0.13), transparent 32%),
+        linear-gradient(180deg, #05070b 0%, #03050a 40%, #060913 100%);
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background:
+        linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+      background-size: 28px 28px;
+      mask-image: radial-gradient(circle at center, black 45%, transparent 92%);
+      opacity: 0.25;
+      z-index: 0;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    img { display: block; max-width: 100%; }
+    button, input, select, textarea { font: inherit; }
+
+    .progress {
+      position: fixed;
+      inset: 0 auto auto 0;
+      width: 0%;
+      height: 3px;
+      z-index: 999;
+      background: linear-gradient(90deg, #f8fbff 0%, #8ea7ff 100%);
+      box-shadow: 0 0 18px rgba(142, 167, 255, 0.35);
+    }
+
+    .wrap {
+      position: relative;
+      z-index: 1;
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 200;
+      backdrop-filter: blur(14px);
+      background: rgba(4, 7, 12, 0.78);
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+
+    .nav-inner {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 10px 20px;
+      min-height: 64px;
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .brand {
+      display: inline-flex;
+      flex-direction: column;
+      gap: 2px;
+      min-width: 0;
+      justify-self: center;
+      text-align: center;
+    }
+
+    .brand-mark {
+      font-size: 1.02rem;
+      font-weight: 900;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      line-height: 1;
+    }
+
+    .brand-name {
+      font-size: 0.68rem;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: var(--muted);
+      line-height: 1.15;
+    }
+
+    .nav-links,
+    .nav-cta {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      min-width: 0;
+    }
+
+    .nav-links {
+      justify-self: start;
+      color: var(--muted);
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      white-space: nowrap;
+    }
+
+    .nav-cta {
+      justify-self: end;
+    }
+
+    .nav-link {
+      opacity: 0.85;
+      transition: opacity 0.2s ease;
+    }
+
+    .nav-link:hover,
+    .nav-link:focus-visible { opacity: 1; }
+
+    .mini-btn,
+    .btn {
+      appearance: none;
+      border: 0;
+      cursor: pointer;
+      transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .mini-btn:hover,
+    .mini-btn:focus-visible,
+    .btn:hover,
+    .btn:focus-visible {
+      transform: translateY(-1px);
+    }
+
+    .mini-btn {
+      padding: 10px 14px;
+      border-radius: 999px;
+      font-size: 0.72rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: #06101f;
+      background: linear-gradient(180deg, #ffffff 0%, #dce7ff 100%);
+      box-shadow: 0 12px 28px rgba(150, 177, 255, 0.20);
+      white-space: nowrap;
+    }
+
+    .hero {
+      padding: 56px 0 34px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(300px, 0.9fr);
+      gap: 24px;
+      align-items: stretch;
+    }
+
+    .hero-copy-wrap {
+      max-width: 680px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 18px;
+      padding: 10px 14px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.10);
+      background: rgba(255,255,255,0.03);
+      color: #d7def0;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      font-size: 0.72rem;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.06);
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #f5f8ff;
+      box-shadow: 0 0 12px rgba(255,255,255,0.55);
+      flex: 0 0 auto;
+    }
+
+    .hero-title {
+      margin: 0;
+      font-size: clamp(2.6rem, 6vw, 5.7rem);
+      line-height: 0.94;
+      letter-spacing: -0.05em;
+      font-weight: 900;
+      text-transform: uppercase;
+      max-width: 11ch;
+    }
+
+    .hero-title span {
+      display: block;
+      text-wrap: balance;
+    }
+
+    .hero-title .metal {
+      background: linear-gradient(180deg, #ffffff 0%, #cdd8f7 42%, #8595c0 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      padding-right: 0.04em;
+    }
+
+    .hero-copy {
+      margin: 22px 0 0;
+      max-width: 58ch;
+      color: #d4dbeb;
+      font-size: clamp(1rem, 1rem + 0.2vw, 1.1rem);
+    }
+
+    .hero-points {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      list-style: none;
+      padding: 0;
+      margin: 24px 0 0;
+    }
+
+    .hero-points li {
+      padding: 11px 14px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.10);
+      background: rgba(255,255,255,0.03);
+      color: #dce4f5;
+      font-size: 0.88rem;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.04);
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 28px;
+    }
+
+    .btn {
+      padding: 15px 22px;
+      border-radius: 16px;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      font-weight: 800;
+      font-size: 0.82rem;
+    }
+
+    .btn-primary {
+      color: #05101f;
+      background: linear-gradient(180deg, #ffffff 0%, #dce7ff 100%);
+      box-shadow: 0 14px 32px rgba(150, 177, 255, 0.18);
+    }
+
+    .btn-secondary {
+      color: #f5f8ff;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.12);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.04);
+    }
+
+    .hero-side,
+    .stack {
+      display: grid;
+      gap: 16px;
+      align-content: start;
+    }
+
+    .panel,
+    .card,
+    .faq-card,
+    .form-card {
+      position: relative;
+      overflow: hidden;
+      background: linear-gradient(180deg, rgba(255,255,255,0.07), rgba(255,255,255,0.035));
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      isolation: isolate;
+    }
+
+    .panel::before,
+    .card::before,
+    .faq-card::before,
+    .form-card::before {
+      content: "";
+      position: absolute;
+      inset: -30% auto auto -10%;
+      width: 180px;
+      height: 180px;
+      background: radial-gradient(circle, rgba(180, 200, 255, 0.16), transparent 65%);
+      pointer-events: none;
+      z-index: -1;
+    }
+
+    .panel,
+    .card,
+    .form-card {
+      padding: 22px;
+      min-width: 0;
+    }
+
+    .panel-label,
+    .card-label,
+    .section-kicker {
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      font-size: 0.72rem;
+    }
+
+    .panel-label,
+    .card-label { margin-bottom: 10px; }
+
+    .panel-value,
+    .card-value {
+      margin: 0;
+      line-height: 1.08;
+      font-weight: 900;
+      font-size: clamp(1.4rem, 2.2vw, 2rem);
+    }
+
+    .panel-copy,
+    .card-text,
+    .section-copy,
+    .form-intro,
+    .faq-body,
+    .small-note {
+      color: #d3daea;
+    }
+
+    .panel-copy,
+    .card-text { margin-top: 10px; }
+
+    .section {
+      padding: 34px 0 74px;
+    }
+
+    .section-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+
+    .section-kicker { margin-bottom: 8px; }
+
+    .section-title {
+      margin: 0;
+      font-size: clamp(1.9rem, 3.2vw, 3rem);
+      line-height: 1.04;
+      letter-spacing: -0.04em;
+      text-transform: uppercase;
+      max-width: 14ch;
+      text-wrap: balance;
+    }
+
+    .section-copy {
+      max-width: 60ch;
+      font-size: 1rem;
+    }
+
+    .stats-grid,
+    .cards-grid,
+    .faq-grid,
+    .split,
+    .form-grid {
+      display: grid;
+      gap: 16px;
+    }
+
+    .stats-grid {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .cards-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .split {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      align-items: start;
+    }
+
+    .card ul {
+      margin: 14px 0 0;
+      padding-left: 18px;
+      color: #d8e0ef;
+    }
+
+    .card li + li { margin-top: 8px; }
+
+    .form-card { padding: 24px; }
+
+    .form-intro {
+      margin: 10px 0 20px;
+    }
+
+    .form-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .field {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      min-width: 0;
+    }
+
+    .field.full { grid-column: 1 / -1; }
+
+    label {
+      color: #d9e0ef;
+      font-size: 0.82rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      min-width: 0;
+      padding: 15px 16px;
+      border-radius: 16px;
+      border: 1px solid rgba(255,255,255,0.11);
+      background: rgba(255,255,255,0.04);
+      color: #f5f8ff;
+      outline: none;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.03);
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 132px;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      border-color: rgba(176, 195, 255, 0.55);
+      box-shadow: 0 0 0 3px rgba(130, 160, 255, 0.10);
+    }
+
+    .consent-box {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      padding: 15px 16px;
+      margin-top: 18px;
+      border-radius: 18px;
+      border: 1px solid rgba(255,255,255,0.10);
+      background: rgba(255,255,255,0.03);
+    }
+
+    .consent-box input[type="checkbox"] {
+      width: 18px;
+      height: 18px;
+      margin-top: 2px;
+      flex: 0 0 auto;
+      accent-color: #dce7ff;
+    }
+
+    .consent-copy { color: #d5dded; }
+
+    .small-note {
+      margin-top: 14px;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .faq-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .faq-card {
+      padding: 0;
+    }
+
+    summary {
+      list-style: none;
+      cursor: pointer;
+      padding: 20px 22px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    summary::-webkit-details-marker { display: none; }
+
+    .faq-body {
+      padding: 0 22px 22px;
+      border-top: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .footer {
+      position: relative;
+      z-index: 1;
+      padding: 28px 0 38px;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      color: var(--muted);
+    }
+
+    .footer-inner {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 0 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(18px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .to-top {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      z-index: 90;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      color: #f7f9ff;
+      background: rgba(5, 9, 16, 0.82);
+      border: 1px solid rgba(255,255,255,0.12);
+      box-shadow: var(--shadow-soft);
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(8px);
+      transition: opacity 0.2s ease, transform 0.2s ease;
+    }
+
+    .to-top.show {
+      opacity: 1;
+      pointer-events: auto;
+      transform: translateY(0);
+    }
+
+    @media (max-width: 1080px) {
+      .stats-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .cards-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .hero-grid { grid-template-columns: 1fr; }
+      .hero-copy-wrap { max-width: 100%; }
+      .hero-title { max-width: 12ch; }
+    }
+
+    @media (max-width: 820px) {
+      .nav-inner {
+        grid-template-columns: auto 1fr auto;
+        min-height: 58px;
+        padding-top: 9px;
+        padding-bottom: 9px;
+      }
+
+      .nav-links {
+        gap: 10px;
+        font-size: 0.68rem;
+        letter-spacing: 0.12em;
+      }
+
+      .brand {
+        justify-self: start;
+        text-align: left;
+      }
+
+      .stats-grid,
+      .cards-grid,
+      .split,
+      .faq-grid,
+      .form-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .section-title { max-width: 18ch; }
+    }
+
+    @media (max-width: 620px) {
+      .wrap,
+      .footer-inner,
+      .nav-inner {
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+
+      .nav-inner {
+        grid-template-columns: 1fr auto;
+        gap: 10px;
+      }
+
+      .nav-links { display: none; }
+
+      .brand {
+        justify-self: start;
+        text-align: left;
+      }
+
+      .brand-mark {
+        font-size: 0.96rem;
+        letter-spacing: 0.22em;
+      }
+
+      .brand-name {
+        font-size: 0.63rem;
+        letter-spacing: 0.14em;
+      }
+
+      .mini-btn {
+        padding: 10px 12px;
+        font-size: 0.66rem;
+      }
+
+      .hero {
+        padding-top: 26px;
+        padding-bottom: 24px;
+      }
+
+      .hero-title {
+        font-size: clamp(2rem, 8.8vw, 3.9rem);
+        line-height: 0.96;
+        max-width: 100%;
+      }
+
+      .hero-copy,
+      .section-copy,
+      .form-intro,
+      .faq-body,
+      .card-text,
+      .panel-copy,
+      .consent-copy,
+      .small-note,
+      input,
+      select,
+      textarea {
+        font-size: 1rem;
+      }
+
+      .btn { width: 100%; }
+      .hero-actions { flex-direction: column; }
+      .hero-points li { width: 100%; }
+      .panel,
+      .card,
+      .form-card { padding: 18px; }
+      summary { padding: 18px; }
+      .faq-body { padding: 0 18px 18px; }
+      .to-top { display: none; }
+    }
+  </style>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Lockhart Strategic Group",
+      "alternateName": "LSG",
+      "description": "Direct screening for performance-driven roles."
+    }
+  </script>
+</head>
+<body>
+  <div class="progress" id="progress"></div>
+
+  <header class="nav">
+    <div class="nav-inner">
+      <nav class="nav-links" aria-label="Primary">
+        <a class="nav-link" href="#opportunity">Opportunity</a>
+        <a class="nav-link" href="#numbers">Numbers</a>
+        <a class="nav-link" href="#faq">FAQ</a>
+      </nav>
+
+      <a class="brand" href="#top" aria-label="LSG home">
+        <span class="brand-mark">LSG</span>
+        <span class="brand-name">Lockhart Strategic Group</span>
+      </a>
+
+      <div class="nav-cta">
+        <a class="mini-btn" href="#screening">Apply</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero wrap">
+      <div class="hero-grid">
+        <div class="hero-copy-wrap reveal visible">
+          <div class="eyebrow">Direct screening for performance-driven roles</div>
+          <h1 class="hero-title">
+            <span>Stop prospecting.</span>
+            <span class="metal">Start closing.</span>
+            <span>Run better appointments.</span>
+          </h1>
+          <p class="hero-copy">
+            Lockhart Strategic Group screens experienced sales professionals for a commission-driven opportunity built around pre-set, credit pre-approved appointments. No cold calling. No door knocking. No telemarketing treadmill.
+          </p>
+          <ul class="hero-points" aria-label="Key benefits">
+            <li>100% pre-set appointments</li>
+            <li>$25 paid presentation rate</li>
+            <li>$600 to $700 average closed deal</li>
+            <li>Built for experienced closers</li>
+          </ul>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#screening">Begin qualification</a>
+            <a class="btn btn-secondary" href="#opportunity">Review opportunity</a>
+          </div>
+        </div>
+
+        <aside class="hero-side reveal">
+          <div class="panel">
+            <div class="panel-label">Typical weekly range</div>
+            <p class="panel-value">$2.5k to $3.5k</p>
+            <div class="panel-copy">Performance-based range for productive reps who run the schedule, present cleanly, and close at a competent rate.</div>
+          </div>
+          <div class="panel">
+            <div class="panel-label">Average closed deal</div>
+            <p class="panel-value">$600 to $700</p>
+            <div class="panel-copy">Average commission per closed sale under the current model, plus a guaranteed pitch commission for completed qualified presentations.</div>
+          </div>
+          <div class="panel">
+            <div class="panel-label">Lead model</div>
+            <p class="panel-value">Pre-set. Pre-approved. In-home.</p>
+            <div class="panel-copy">Built for reps who would rather present and close than spend their week chasing ghosts through mud and voicemail.</div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section wrap" id="opportunity">
+      <div class="section-head reveal">
+        <div>
+          <div class="section-kicker">The opportunity</div>
+          <h2 class="section-title">Better inputs create better conversations.</h2>
+        </div>
+        <p class="section-copy">
+          This role is built for experienced sales professionals who want to spend less time hunting and more time presenting. Appointments are generated ahead of time and arrive pre-set and credit pre-approved. There is no cold calling, no telemarketing, and no door-to-door prospecting.
+        </p>
+      </div>
+
+      <div class="stats-grid">
+        <article class="card reveal">
+          <div class="card-label">Lead structure</div>
+          <h3 class="card-value">100% pre-set</h3>
+          <p class="card-text">Appointments are scheduled in advance and designed to put you in front of live opportunity instead of random lead clutter.</p>
+        </article>
+        <article class="card reveal">
+          <div class="card-label">Pitch pay</div>
+          <h3 class="card-value">$25 per presentation</h3>
+          <p class="card-text">Guaranteed for each completed qualified 90-minute presentation, whether or not the deal closes.</p>
+        </article>
+        <article class="card reveal">
+          <div class="card-label">Offer range</div>
+          <h3 class="card-value">$299 to $10,000+</h3>
+          <p class="card-text">Room for real ticket size, layered offers, and stronger value conversations instead of tiny-margin nonsense.</p>
+        </article>
+        <article class="card reveal">
+          <div class="card-label">Additional bonuses</div>
+          <h3 class="card-value">Closed-deal upside</h3>
+          <p class="card-text">Additional bonuses apply based on closed deal type and retention criteria.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section wrap" id="numbers">
+      <div class="section-head reveal">
+        <div>
+          <div class="section-kicker">What the numbers look like</div>
+          <h2 class="section-title">A straightforward model with real upside.</h2>
+        </div>
+        <p class="section-copy">
+          The model is simple. You are paid for production. Consistency, communication, and closing ability matter more than theatrical sales fluff.
+        </p>
+      </div>
+
+      <div class="cards-grid">
+        <article class="card reveal">
+          <div class="card-label">Weekly target</div>
+          <h3 class="card-value">$2.5k to $3.5k</h3>
+          <p class="card-text">Typical earnings range for qualified reps who run the appointments and work a stable weekly rhythm.</p>
+        </article>
+        <article class="card reveal">
+          <div class="card-label">Lead model</div>
+          <h3 class="card-value">Pre-set</h3>
+          <p class="card-text">Appointments are generated ahead of time. Your job is to show up prepared, present clearly, and ask for the sale.</p>
+        </article>
+        <article class="card reveal">
+          <div class="card-label">Daily rhythm</div>
+          <h3 class="card-value">2 to 3 appointments</h3>
+          <p class="card-text">Best fit for people who can manage presentation volume without getting sloppy or soft around the edges.</p>
+        </article>
+      </div>
+
+      <p class="small-note reveal">Performance varies by attendance, closing ability, consistency, market conditions, and how well you operate in a commission-only role.</p>
+    </section>
+
+    <section class="section wrap" id="requirements">
+      <div class="section-head reveal">
+        <div>
+          <div class="section-kicker">Who this fits</div>
+          <h2 class="section-title">Designed for experienced sales professionals.</h2>
+        </div>
+        <p class="section-copy">
+          This is for people with real sales experience, stable work history, and enough emotional spine to perform when compensation is tied to output.
+        </p>
+      </div>
+
+      <div class="split">
+        <article class="card reveal">
+          <div class="card-label">Minimum considerations</div>
+          <ul>
+            <li>Prior sales experience required</li>
+            <li>Big-ticket or commission-only background strongly preferred</li>
+            <li>Reliable transportation required</li>
+            <li>Ability to run 2 to 3 appointments per day</li>
+            <li>Comfort with in-home presentations and asking for the sale</li>
+          </ul>
+        </article>
+        <article class="card reveal">
+          <div class="card-label">Better indicators of fit</div>
+          <ul>
+            <li>Strong communication under pressure</li>
+            <li>Stable employment history or long-term production track record</li>
+            <li>Self-direction without hourly supervision</li>
+            <li>Clear understanding of commission-driven work</li>
+            <li>Willingness to follow a straightforward, performance-based process</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section wrap" id="screening">
+      <div class="split">
+        <div class="form-card reveal">
+          <div class="section-kicker">Initial qualification review</div>
+          <h2 class="section-title">Check whether your background fits.</h2>
+          <p class="form-intro">
+            Complete the brief review below to see whether your background aligns with the current screening criteria.
+          </p>
+
+          <form name="lsg-screening" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="lsg-screening" />
+            <input type="hidden" name="subject" value="New LSG screening submission" />
+            <p hidden>
+              <label>Do not fill this out: <input name="bot-field" /></label>
+            </p>
+
+            <div class="form-grid">
+              <div class="field">
+                <label for="name">Full name</label>
+                <input id="name" name="name" type="text" autocomplete="name" required />
+              </div>
+              <div class="field">
+                <label for="phone">Mobile number</label>
+                <input id="phone" name="phone" type="tel" autocomplete="tel" required />
+              </div>
+              <div class="field full">
+                <label for="email">Email address</label>
+                <input id="email" name="email" type="email" autocomplete="email" required />
+              </div>
+              <div class="field">
+                <label for="market">Primary market</label>
+                <input id="market" name="market" type="text" placeholder="City, State" required />
+              </div>
+              <div class="field">
+                <label for="experience">Most relevant sales background</label>
+                <select id="experience" name="experience" required>
+                  <option value="" selected disabled>Select one</option>
+                  <option>Home improvement</option>
+                  <option>Automotive</option>
+                  <option>Financial services</option>
+                  <option>Retail high-ticket</option>
+                  <option>Commission-only contract sales</option>
+                  <option>Other sales background</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="history">Work history fit</label>
+                <select id="history" name="history" required>
+                  <option value="" selected disabled>Select one</option>
+                  <option>Two or more prior roles with stable history</option>
+                  <option>Long-term sales experience in fewer roles</option>
+                  <option>Strong recent sales history with commission-only background</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="availability">Available start window</label>
+                <select id="availability" name="availability" required>
+                  <option value="" selected disabled>Select one</option>
+                  <option>Immediately</option>
+                  <option>Within 2 weeks</option>
+                  <option>Within 30 days</option>
+                  <option>Exploring only</option>
+                </select>
+              </div>
+              <div class="field full">
+                <label for="notes">Relevant experience or notes</label>
+                <textarea id="notes" name="notes" placeholder="Share the kind of sales environment you have worked in, any commission-only background, and anything else that helps establish fit."></textarea>
+              </div>
+            </div>
+
+            <label class="consent-box" for="consent-email">
+              <input id="consent-email" name="consent_email_updates" type="checkbox" value="yes" />
+              <span class="consent-copy">I agree to receive occasional email updates about future sales opportunities, recruiting updates, and market availability from Lockhart Strategic Group. I understand I can unsubscribe at any time.</span>
+            </label>
+
+            <button class="btn btn-primary" type="submit" style="margin-top:18px; width:100%;">Start review</button>
+            <div class="small-note">Optional email updates are separate from the qualification review and can be declined at any time.</div>
+          </form>
+        </div>
+
+        <div class="stack">
+          <article class="panel reveal">
+            <div class="panel-label">Why the process is direct</div>
+            <p class="panel-value">Because fit matters more than volume.</p>
+            <div class="panel-copy">The review focuses on relevant experience, communication, and practical fit before anyone wastes time on a pretty but useless conversation.</div>
+          </article>
+          <article class="panel reveal">
+            <div class="panel-label">What happens next</div>
+            <p class="panel-value">Review first. Conversation second.</p>
+            <div class="panel-copy">If your background aligns with current criteria, the next step is a direct conversation about experience, role structure, and real-world fit.</div>
+          </article>
+          <article class="panel reveal">
+            <div class="panel-label">Current focus</div>
+            <p class="panel-value">Experienced closers only.</p>
+            <div class="panel-copy">This is aimed at people who already understand commission-based selling, in-home presentation flow, and performance expectations.</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section wrap" id="faq">
+      <div class="section-head reveal">
+        <div>
+          <div class="section-kicker">Common questions</div>
+          <h2 class="section-title">Common questions, answered clearly.</h2>
+        </div>
+        <p class="section-copy">
+          The role has real upside, and the model is straightforward. Clear details help both sides decide faster.
+        </p>
+      </div>
+
+      <div class="faq-grid">
+        <details class="faq-card reveal">
+          <summary>Do I have to generate my own leads?<span>+</span></summary>
+          <div class="faq-body">No. Appointments are pre-set and credit pre-approved. There is no cold calling, telemarketing, or door-to-door prospecting required.</div>
+        </details>
+        <details class="faq-card reveal">
+          <summary>Is this hourly or salary based?<span>+</span></summary>
+          <div class="faq-body">No. This is a 100% commission-only opportunity. It fits best for people already comfortable in a performance-based compensation model.</div>
+        </details>
+        <details class="faq-card reveal">
+          <summary>What kind of background is preferred?<span>+</span></summary>
+          <div class="faq-body">Prior sales experience is required. Big-ticket, commission-only, contract, and in-home presentation experience are all strong indicators of fit.</div>
+        </details>
+        <details class="faq-card reveal">
+          <summary>How many appointments does a rep usually run?<span>+</span></summary>
+          <div class="faq-body">The usual pace is 2 to 3 appointments per day, depending on schedule and market activity.</div>
+        </details>
+        <details class="faq-card reveal">
+          <summary>Is there any guaranteed pay?<span>+</span></summary>
+          <div class="faq-body">Yes. There is a guaranteed $25 pitch commission for each completed qualified presentation, regardless of whether a sale is made.</div>
+        </details>
+        <details class="faq-card reveal">
+          <summary>What am I selling?<span>+</span></summary>
+          <div class="faq-body">A high-ticket outdoor product line with pricing that ranges from entry-level offers to premium packages exceeding $10,000.</div>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div>© 2026 Lockhart Strategic Group</div>
+      <div>LSG • Direct screening for performance-driven roles</div>
+    </div>
+  </footer>
+
+  <a href="#top" class="to-top" id="toTop" aria-label="Back to top">↑</a>
+
+  <script>
+    const progress = document.getElementById('progress');
+    const toTop = document.getElementById('toTop');
+    const reveals = document.querySelectorAll('.reveal');
+
+    function onScroll() {
+      const scrollTop = window.scrollY;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const ratio = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+      progress.style.width = ratio + '%';
+      toTop.classList.toggle('show', scrollTop > 480);
+    }
+
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    reveals.forEach((el, index) => {
+      if (!el.classList.contains('visible')) {
+        el.style.transitionDelay = Math.min(index * 40, 220) + 'ms';
+        observer.observe(el);
+      }
+    });
+  </script>
+</body>
+</html>
