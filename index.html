@@ -857,11 +857,17 @@
             </form>
 
             <!-- Success message (shown after submission) -->
-            <div class="form-success" id="form-success">
-              <div class="check">✓</div>
-              <h4>Received.</h4>
-              <p>We'll review your background and reach out within 1 business day.</p>
-            </div>
+            <
+      } catch (err) {
+        btn.disabled = false;
+        btn.textContent = 'Submit Qualification →';
+        alert('Something went wrong. Please try again or email us directly.');
+      }
+    });
+  </script>
+
+<div class="form-success" id="form-success">
+</div>
 
           </div>
         </div>
@@ -916,50 +922,16 @@
   </footer>
 
   <script>
-    // ─── Scroll Progress Bar ───
     const bar = document.getElementById('progress-bar');
+
     function updateBar() {
       const scrollTop = window.scrollY;
       const docH = document.documentElement.scrollHeight - window.innerHeight;
       bar.style.width = (docH > 0 ? (scrollTop / docH) * 100 : 0) + '%';
     }
+
     updateBar();
     window.addEventListener('scroll', updateBar, { passive: true });
-
-    // ─── Netlify Form Handler (SPA-style) ───
-    // This JS intercepts the submit, sends via fetch, and shows success in-page.
-    // Netlify's bot still detects the form via the hidden HTML form in the DOM.
-    const form = document.getElementById('lsg-form');
-    const successEl = document.getElementById('form-success');
-
-    form.addEventListener('submit', async function(e) {
-      e.preventDefault();
-
-      const btn = form.querySelector('button[type="submit"]');
-      btn.disabled = true;
-      btn.textContent = 'Submitting…';
-
-      const data = new URLSearchParams();
-      for (const [key, val] of new FormData(form)) {
-        data.append(key, val);
-      }
-
-      try {
-        await fetch('/', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-          body: data.toString()
-        });
-
-        form.style.display = 'none';
-        successEl.style.display = 'block';
-
-      } catch (err) {
-        btn.disabled = false;
-        btn.textContent = 'Submit Qualification →';
-        alert('Something went wrong. Please try again or email us directly.');
-      }
-    });
   </script>
 
 </body>
