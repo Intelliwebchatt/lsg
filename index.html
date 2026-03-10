@@ -817,11 +817,13 @@
 
             <!-- Netlify form — name + data-netlify + hidden form-name are all required -->
             <form
-              id="lsg-form"
-              name="lsg-screening"
-              method="POST"
-              data-netlify="true"
-              netlify-honeypot="bot-field"
+  id="lsg-form"
+  name="lsg-screening"
+  method="POST"
+  data-netlify="true"
+  netlify-honeypot="bot-field"
+  action="/thank-you.html"
+
             >
               <!-- Required hidden field for Netlify -->
               <input type="hidden" name="form-name" value="lsg-screening" />
