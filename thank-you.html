@@ -1,111 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Thank You | LSG Recruiting Network</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-
-  <style>
-    :root{
-      --text-main:#f3f7fb;
-      --text-muted:#97a3b1;
-      --shadow-heavy:0 30px 90px rgba(0,0,0,.64);
-    }
-
-    *{
-      box-sizing:border-box;
-      margin:0;
-      padding:0;
-    }
-
-    body{
-      font-family:'Inter',sans-serif;
-      color:var(--text-main);
-      min-height:100vh;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      background:
-        radial-gradient(circle at 20% 20%, rgba(255,255,255,.06), transparent 20%),
-        linear-gradient(180deg,#040506 0%,#090b0e 35%,#050608 100%);
-      padding:24px;
-    }
-
-    .card{
-      max-width:720px;
-      width:100%;
-      padding:38px;
-      border-radius:30px;
-      border:1px solid rgba(255,255,255,.1);
-      background:linear-gradient(180deg,rgba(255,255,255,.07),rgba(255,255,255,.025));
-      box-shadow:var(--shadow-heavy);
-      text-align:center;
-    }
-
-    img{
-      height:90px;
-      width:auto;
-      display:block;
-      margin:0 auto 24px;
-      border-radius:20px;
-      border:1px solid rgba(255,255,255,.1);
-    }
-
-    h1{
-      font-family:'Playfair Display',serif;
-      font-size:clamp(2.1rem,5vw,3.4rem);
-      margin-bottom:1rem;
-      line-height:1.06;
-    }
-
-    p{
-      font-size:1.05rem;
-      color:var(--text-muted);
-      margin-bottom:1rem;
-      line-height:1.65;
-    }
-
-    a{
-      display:inline-flex;
-      align-items:center;
-      justify-content:center;
-      padding:.95rem 1.6rem;
-      border-radius:999px;
-      border:1px solid rgba(255,255,255,.18);
-      background:linear-gradient(180deg,#f7fafc 0%,#dbe4ec 54%,#b2beca 100%);
-      color:#0a0d11;
-      text-decoration:none;
-      font-size:.86rem;
-      font-weight:800;
-      text-transform:uppercase;
-      letter-spacing:.16em;
-      margin-top:10px;
-    }
-
-    a:hover{
-      opacity:.94;
-    }
-  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#1746d1">
+  <title>Inquiry received | LSG Artist Homes</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-  <div class="card">
-    <img src="1000019126.png" alt="LSG Recruiting Network logo" />
-
-    <h1>Application Received</h1>
-
-    <p>Thank you. Your qualification form has been submitted successfully.</p>
-
-    <p>The next step is to schedule a short phone screening.</p>
-
-    <p>Please use the button below to choose a time that works for you.</p>
-
-    <a href="https://calendly.com/aslockhart10/sales-screening-call" target="_blank" rel="noopener noreferrer">
-      Schedule Screening Call
-    </a>
-  </div>
+  <main class="thanks-page">
+    <article class="thanks-card">
+      <a class="brand" href="/" aria-label="LSG Artist Homes home">
+        <span class="roof-mark" aria-hidden="true"><i></i></span>
+        <span class="brand-name"><b>LSG</b><span>ARTIST HOMES</span></span>
+      </a>
+      <p class="eyebrow">Inquiry received</p>
+      <h1>Your note is home.</h1>
+      <p>Thank you for telling us what you want to build. Every inquiry is reviewed personally, and LSG Artist Homes will reply using the email address you submitted.</p>
+      <a class="button button-primary" href="/">Return to Artist Homes</a>
+    </article>
+  </main>
 </body>
 </html>
